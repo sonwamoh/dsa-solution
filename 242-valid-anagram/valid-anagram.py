@@ -3,7 +3,7 @@ class Solution:
         """
         Optimize for space 
         TC: O(n)
-        SC: O(1)
+        SC: O(n)
         """
         if len(s) != len(t):
             return False
