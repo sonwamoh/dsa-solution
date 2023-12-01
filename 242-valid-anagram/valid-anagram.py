@@ -5,5 +5,5 @@ class Solution:
         TC: O(n)
         SC: O(1)
         """
-        return sorted(s) == sorted(t)
+        return ''.join(sorted(s)) == ''.join(sorted(t))
         
