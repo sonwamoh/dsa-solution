@@ -1,9 +1,7 @@
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
-        res = []
-        for i in range(2):
-            for i in nums:
-                res.append(i)
-        return res
+        for i in range(len(nums)):
+            nums.append(nums[i])
+        return nums
 
         
