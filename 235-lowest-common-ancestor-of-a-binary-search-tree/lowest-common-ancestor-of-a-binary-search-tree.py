@@ -13,5 +13,6 @@ class Solution:
                 curr = curr.right
             elif p.val < curr.val and q.val < curr.val:
                 curr = curr.left
-            else:
+            # Node at which split occurs is the LCA node 
+            else: 
                 return curr
