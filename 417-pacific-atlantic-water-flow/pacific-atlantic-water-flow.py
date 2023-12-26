@@ -4,7 +4,7 @@ class Solution:
         pac, atl = set(), set()
 
         def dfs(r, c, ocean, prevH):
-            
+
             if (r < 0 or c < 0
                 or r >= n_rows or c >= n_cols
                 or (r, c) in ocean 
@@ -26,6 +26,7 @@ class Solution:
             dfs(n_rows - 1, c, atl, heights[n_rows - 1][c])
         
         res = []
+        
         for r in range(n_rows):
             for c in range(n_cols):
                 if (r, c) in pac and (r, c) in atl:
