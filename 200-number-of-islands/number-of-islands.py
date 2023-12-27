@@ -1,7 +1,5 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        if not grid:
-            return 0
         rows, cols = len(grid), len(grid[0])
         visit = set()
         islands = 0
@@ -15,7 +13,7 @@ class Solution:
                 directions = [[1, 0], [-1, 0], [0, 1], [0, -1]]
                 for dr, dc in directions:
                     r, c = dr + row, dc + col
-                    if r in range(rows) and c in range(cols) and grid[r][c] == '1' and (r, c) not in visit:
+                    if r in range(len(grid)) and c in range(len(grid[0])) and grid[r][c] == '1' and (r, c) not in visit:
                         q.append((r, c))
                         visit.add((r, c))
 
