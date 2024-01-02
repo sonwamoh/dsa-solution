@@ -5,7 +5,7 @@ class Solution:
         ant -> nat, tan
         abt -> bat
         """
-        map = {}
+        map = collections.defaultdict(list)
         for s in strs:
             key = ''.join(sorted(s))
             if key in map:
