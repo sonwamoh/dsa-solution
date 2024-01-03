@@ -3,7 +3,7 @@ class Solution:
         if not intervals:
             return 0
 
-        intervals.sort(key=lambda x: x[1])  # Sort by the end time
+        intervals.sort(key=lambda x: (x[1], x[0]))  
 
         delete = 0
         end = intervals[0][1]
