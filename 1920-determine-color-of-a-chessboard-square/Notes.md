@@ -1,1 +1,1 @@
-<h2>determine-color-of-a-chessboard-square Notes</h2><hr>Basic idea is convert 
+<h2>determine-color-of-a-chessboard-square Notes</h2><hr>Basic idea is convert (d4)
